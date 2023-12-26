@@ -31,7 +31,46 @@
 	flavor = "tap-preferred";
 };
 
+
+
 / {
+
+behaviors {
+
+   open_symbol: td_open {
+     compatible = "zmk,behavior-tap-dance";
+     label = "TD_OPEN";
+     #binding-cells = <0>;
+     tapping-term-ms = <200>;
+     bindings = <&kp RS(RIGHT_BRACKET)>, <&kp RS(NUMBER_9)>, <&kp RIGHT_BRACKET>, <&kp LT>;
+   };
+
+   close_symbol: td_close {
+     compatible = "zmk,behavior-tap-dance";
+     label = "TD_CLOSE";
+     #binding-cells = <0>;
+     tapping-term-ms = <200>;
+     bindings = <&kp RS(BACKSLASH)>, <&kp RS(NUMBER_0)>, <&kp BACKSLASH>, <&kp GT>;
+   };
+
+   dot_dot: dot_dot {
+     compatible = "zmk,behavior-tap-dance";
+     label = "DOT_DOT";
+     #binding-cells = <0>;
+     tapping-term-ms = <200>;
+     bindings = <&kp PERIOD>, <&kp LS(SLASH)>;
+  };
+
+   comma_comma: comma_comma {
+     compatible = "zmk,behavior-tap-dance";
+     label = "COMMA_COMMA";
+     #binding-cells = <0>;
+     tapping-term-ms = <200>;
+     bindings = <&kp COMMA>, <&kp SLASH>;
+   };
+
+ };
+
     keymap {
         compatible = "zmk,keymap";
 
