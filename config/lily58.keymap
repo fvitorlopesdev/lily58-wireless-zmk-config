@@ -102,8 +102,6 @@ label = "Base";
 &kp LSHFT &mt RS(Z) Z       &mt RS(X) X      &mt RS(C) C      &mt RS(V) V       &mt RS(B) B  &kp LBKT         &kp RBKT  &mt RS(N) N      &mt RS(M) M      &comma_comma     &dot_dot         &kp FSLH         &kp RSHFT
                             &kp LALT         &kp LGUI         &mo 1             &kp SPACE                               &kp RET          &mo 2            &kp BSPC         &kp RGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Mouse_layer {
@@ -130,8 +128,6 @@ label = "Base";
 &kp LSHFT    &none      &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	&none    		&none	&kp K_MUTE     &kp LC(PAGE_UP)	&kp LC(PAGE_DOWN)	&none			&none	&kp RSHFT
                       		         &kp LALT	  &kp LGUI          &mkp RCLK   &mkp LCLK       	&none	&none	       &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -149,8 +145,6 @@ label = "Base";
 &kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
