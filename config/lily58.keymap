@@ -98,7 +98,7 @@ label = "Base";
 &kp ESC   &mt RS(N1) N1     &mt RS(N2) N2    &mt RS(N3) N3    &mt RS(N4) N4   	&mt RS(N5) N5				&mt RS(N6) N6    &mt RS(N7) N7    &mt RS(N8) N8    &mt RS(N9) N9    &mt RS(N0) N0    &kp BSPC
 &kp TAB   &mt RS(Q) Q       &mt RS(W) W      &mt RS(E) E      &mt RS(R) R     	&mt RS(T) T				&mt RS(Y) Y      &mt RS(U) U      &mt RS(I) I      &mt RS(O) O      &mt RS(P) P      &kp RETURN
 &kp LCTRL &mt RS(A) A       &mt RS(S) S      &mt RS(D) D      &mt RS(F) F       &mt RS(G) G				&mt RS(H) H      &mt RS(J) J      &mt RS(K) K      &mt RS(L) L      &kp SEMI 	     &kp BSPC
-&kp LSHFT &mt RS(Z) Z       &mt RS(X) X      &mt RS(C) C      &mt RS(V) V       &mt RS(B) B  &kp LBKT         &kp RBKT  &mt RS(N) N      &mt RS(M) M      &kp COMMA	   &kp DOT          &kp FSLH         &kp RSHFT
+&kp LSHFT &mt RS(Z) Z       &mt RS(X) X      &mt RS(C) C      &mt RS(V) V       &mt RS(B) B  &kp LBKT         &kp RBKT  &mt RS(N) N      &mt RS(M) M      &comma_comma     &dot_dot         &kp FSLH         &kp RSHFT
                             &kp LALT         &kp LGUI         &mo 1             &kp SPACE                               &kp RET          &mo 2            &kp BSPC         &kp RGUI
             >;
 
