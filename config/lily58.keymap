@@ -124,11 +124,11 @@ label = "Base";
 
 	    label = "MOUSE";
             bindings = <
-&kp ESC      &none      &none            &none            &none             &none                       	&none	&none	&none	&none	&none	&none
-&kp TAB      &none      &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    				&none	&none	&none	&none	&none	&none
-&kp LCTRL    &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	&none	&none	&none	&none	&none   &none
-&kp LSHFT    &none      &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	&none    	&none	&none	&none	&none	&none	&none	&none
-                      		         &kp LALT	  &kp LGUI          &mkp RCLK   &mkp LCLK       &none	&none	&none	&none
+&kp ESC      &none      &none            &none            &none             &none                   		    	&none	       &none		&none			&none		  	&none	&kp BSPC
+&kp TAB      &none      &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    					&kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN	&mwh SCROLL_DOWN	&none	&kp RETURN
+&kp LCTRL    &none      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       		&kp K_VOL_DN   &none		&none			&none			&none   &kp LCTRL
+&kp LSHFT    &none      &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	&none    		&none	&kp K_MUTE     &kp LC(PAGE_UP)	&kp LC(PAGE_DOWN)	&none			&none	&kp RSHFT
+                      		         &kp LALT	  &kp LGUI          &mkp RCLK   &mkp LCLK       	&none	&none	       &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
