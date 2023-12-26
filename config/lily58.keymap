@@ -92,7 +92,8 @@ behaviors {
  | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "-"  | 		 |  "+"  |  N   |  M    |  ,    |  .   |   /   | <def> |
  ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
  		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯								
- */
+ 
+*/
 label = "Base";
             bindings = <
 &kp ESC   &mt RS(N1) N1     &mt RS(N2) N2    &mt RS(N3) N3    &mt RS(N4) N4   	&mt RS(N5) N5				&mt RS(N6) N6    &mt RS(N7) N7    &mt RS(N8) N8    &mt RS(N9) N9    &mt RS(N0) N0    &kp BSPC
@@ -105,14 +106,23 @@ label = "Base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-//                     |      |      |      |        |  |       |      |       |       |
-            label = "Lower";
+        Mouse_layer {
+/*		MOUSE AND MEDIA CONTROL
+ * TODO
+ - update def
+
+
+ ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
+ |  ESC  |     |     |      |      |      |          		         |      |       |       |      |       |  BSPC |
+ |  TAB  |     |LFTCL|  MUP | RGTCL|      |            		         |VOL-UP|       |       |      |       | ENTER |
+ |  CTRL |     |MLEFT|MDOWN |MRIGHT|      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       | <def> |
+ | SHIFT |     |     |PAGEB | PAGEF|      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       | <def> |
+ ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
+ 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯								
+ 
+*/    
+
+	    label = "MOUSE";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
