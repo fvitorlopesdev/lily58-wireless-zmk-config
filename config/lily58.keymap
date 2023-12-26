@@ -18,6 +18,13 @@
 #define WINDOW_MANAGER 5
 #define MODIFIERS 6
 
+&mmv {
+	time-to-max-speed-ms = <300>;
+};
+
+&mwh {
+	acceleration-exponent=<1>;
+};
 
 &mt {
 	tapping-term-ms = <300>;
