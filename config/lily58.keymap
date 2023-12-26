@@ -11,12 +11,9 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
-#define NAVIGATION 1
-#define MOUSE 2
+#define MOUSE 1
+#define NAVIGATION 2
 #define SYMBOLS 3
-#define NUMBERS 4
-#define WINDOW_MANAGER 5
-#define MODIFIERS 6
 
 &mmv {
 	time-to-max-speed-ms = <300>;
@@ -78,10 +75,7 @@ keymap {
 	
 	 * TODO
 	 - Link other layers
-	 - update def
-	 - tap dance for : , . ;
-	
-	
+		
 	 ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
 	 |  ESC  |  1  |  2  |  3   |  4   |  5   |          		         |  6   |  7    |  8    |  9   |   0   |  BSPC |
 	 |  TAB  |  Q  |  W  |  E   |  R   |  T   |            		         |  Y   |  U    |  I    |  O   |   P   | ENTER |
@@ -130,9 +124,9 @@ keymap {
 
 	 ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
 	 |  ESC  |     |     |      |      |      |          		         |      |       |       |      |       |  BSPC |
-	 |  TAB  |     |     | UP   |      |      |            		         |VOL-UP|       |       |      |       | ENTER |
+	 |  TAB  |     |PAGDN| UP   |PAGUP |      |            		         |VOL-UP|       |       |      |       | ENTER |
 	 |  CTRL |     |LEFT |DOWN  |RIGHT |      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       | <def> |
-	 | SHIFT |     |     |PAGEB | PAGEF|      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       | <def> |
+	 | SHIFT |  Z  |  X  |  C   | V    |      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       | <def> |
 	 ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
 	 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯		
 	*/ 
