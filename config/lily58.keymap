@@ -90,8 +90,8 @@ keymap {
 		&kp ESC     &mt RS(N1) N1   &mt RS(N2) N2   &mt RS(N3) N3   &mt RS(N4) N4   &mt RS(N5) N5			       &mt RS(N6) N6   &mt RS(N7) N7   &mt RS(N8) N8   &mt RS(N9) N9   &mt RS(N0) N0   &kp BSPC
 		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				       &mt RS(Y) Y     &mt RS(U) U     &mt RS(I) I     &mt RS(O) O     &mt RS(P) P     &kp RETURN
 		&kp LCTRL   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				       &mt RS(H) H     &mt RS(J) J     &mt RS(K) K     &mt RS(L) L     &kp SEMI        &kp HOME
-		&kp LSHFT   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp EQUAL         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp FSLH        &kp END
-		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &kp RIGHT_BRACKET &kp BACKSLASH
+		&kp LSHFT   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp PIPE         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp FSLH        &kp END
+		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &kp RIGHT_BRACKET &kp  &mt RS(NON_US_BACKSLASH) NON_US_BACKSLASH
             >;
         };
 
@@ -159,9 +159,9 @@ keymap {
 
             label = "Symbols";
             bindings = <
-		&kp ESC     &kp EXCLAMATION       &kp AT_SIGN 	   &kp HASH               &kp DOLLAR  	  &kp PERCENT                  	    &kp CARET   &kp AMPERSAND     &kp ASTERISK     &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp BSPC
-		&kp TAB     &mt RS(TILDE) TILDE   &kp LEFT_BRACE   &kp GRAV               &kp SLASH       &none                             &kp Y       &kp BACKSLASH     &kp PIPE         &kp CARET              &none                   &kp RETURN
-		&kp LCTRL   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                         &kp PIPE    &mt MINUS UNDER   &mt EQUAL PLUS   &none                  &none                   &kp LCTRL   
+		&kp ESC     &kp EXCLAMATION       &kp AT_SIGN 	   &kp HASH               &kp DOLLAR  	  &kp PERCENT                  	    &kp CARET   &kp AMPERSAND     &kp ASTERISK     &kp MINUS      &kp EQUAL      &kp BSPC
+		&kp TAB     &mt RS(TILDE) TILDE   &kp LEFT_BRACE   &kp GRAV               &kp SLASH       &none                             &kp Y       &kp BACKSLASH     &kp PIPE         &kp RS(MINUS)  &kp RS(EQUAL)  &none                   &kp RETURN
+		&kp LCTRL   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                         &kp PIPE    &td_open          &td_close        &none                  &none                   &kp LCTRL   
 		&kp LSHFT   &kp F2                &kp F3           &kp LA(F4)             &kp LC(F5)      &kp F6                            &kp F7      &kp F8            &kp F9           &kp F10                &kp F11                 &kp RSHFT
 		                         	  &kp LALT         &kp LGUI               &mo 1           &kp SPACE   &none                 &none       &none             &none
             >;
