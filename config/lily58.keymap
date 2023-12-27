@@ -87,10 +87,10 @@ keymap {
 	*/
 	    label = "Base";
             bindings = <
-		&kp ESC     &mt RS(N1) N1   &mt RS(N2) N2   &mt RS(N3) N3   &mt RS(N4) N4   &mt RS(N5) N5			       &mt RS(N6) N6   &mt RS(N7) N7   &mt RS(N8) N8   &mt RS(N9) N9   &mt RS(N0) N0   &kp BSPC
-		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				       &mt RS(Y) Y     &mt RS(U) U     &mt RS(I) I     &mt RS(O) O     &mt RS(P) P     &kp RETURN
-		&kp LCTRL   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				       &mt RS(H) H     &mt RS(J) J     &mt RS(K) K     &mt RS(L) L     &kp SEMI        &kp HOME
-		&kp LSHFT   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp EQUAL         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp FSLH        &kp END
+		&kp ESC     &mt RS(N1) N1   &mt RS(N2) N2   &mt RS(N3) N3   &mt RS(N4) N4   &mt RS(N5) N5			       &mt RS(N6) N6   &mt RS(N7) N7   &mt RS(N8) N8   &mt RS(N9) N9   &mt RS(N0) N0     &kp BSPC
+		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				       &mt RS(Y) Y     &mt RS(U) U     &mt RS(I) I     &mt RS(O) O     &mt RS(P) P       &kp RETURN
+		&kp LCTRL   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				       &mt RS(H) H     &mt RS(J) J     &mt RS(K) K     &mt RS(L) L     &kp RETURN        &kp HOME
+		&kp LSHFT   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp EQUAL         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp BSPC          &kp END
 		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &kp RIGHT_BRACKET &kp BACKSLASH
             >;
         };
@@ -110,10 +110,10 @@ keymap {
 
 	    label = "MOUSE";
             bindings = <
-		&kp ESC     &none   &none            &none            &none             &none                      	       &none	      &none		&none		   &none              &none   &kp BSPC
-		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
-		&kp LCTRL   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &none   &kp HOME
-		&kp LSHFT   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &none   &kp END
+		&kp ESC     &none   &none            &none            &none             &none                      	       &none	      &none		&none		   &none              &none      &kp BSPC
+		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none      &kp RETURN
+		&kp LCTRL   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &kp RETURN   &kp HOME
+		&kp LSHFT   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &kp BSPC     &kp END
 		                      		     &kp LALT	      &sk LEFT_CONTROL  &mkp RCLK   &mkp LCLK          &none   &none	      &none  		&none
             >;
         };
@@ -136,8 +136,8 @@ keymap {
             bindings = <
 		&kp ESC     &none   &none 	    &none      &none  	     &none                   	       &none     &none            &none   	     &none   		&none   &kp BSPC
 		&kp TAB     &none   &kp PAGE_DOWN   &kp UP     &kp PAGE_UP   &none                             &kp Y     &mwh SCROLL_UP   &mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
-		&kp LCTRL   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&none   &kp HOME
-		&kp LSHFT   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&none   &kp END
+		&kp LCTRL   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&kp RETURN   &kp HOME
+		&kp LSHFT   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&kp BSPC  &kp END
 		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL  &kp LGUI              &none   &none     &none    &none
             >;
         };
