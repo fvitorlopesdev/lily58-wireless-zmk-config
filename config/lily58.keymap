@@ -87,11 +87,11 @@ keymap {
 	*/
 	    label = "Base";
             bindings = <
-		&kp ESC     &mt RS(N1) N1   &mt RS(N2) N2   &mt RS(N3) N3   &mt RS(N4) N4   &mt RS(N5) N5			       &mt RS(N6) N6   &mt RS(N7) N7   &mt RS(N8) N8   &mt RS(N9) N9   &mt RS(N0) N0     &kp PAGE_UP
-		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				       &mt RS(Y) Y     &mt RS(U) U     &mt RS(I) I     &mt RS(O) O     &mt RS(P) P       &kp PAGE_DOWN
-		&kp LSHFT   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				       &mt RS(H) H     &mt RS(J) J     &mt RS(K) K     &mt RS(L) L     &kp RETURN        &kp HOME
-		&kp LCTRL   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp EQUAL         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp BSPC          &kp END
-		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &mt RIGHT_BRACKET RS(RIGHT_BRACKET)  &mt BACKSLASH RS(BACKSLASH)
+		&kp ESC     &mt RS(N1) N1   &mt RS(N2) N2   &mt RS(N3) N3   &mt RS(N4) N4   &mt RS(N5) N5			           		   &mt RS(N6) N6      &mt RS(N7) N7   			    &mt RS(N8) N8   		  &mt RS(N9) N9   &mt RS(N0) N0     &kp PAGE_UP
+		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				           		   &mt RS(Y) Y        &mt RS(U) U     			    &mt RS(I) I     		  &mt RS(O) O     &mt RS(P) P       &kp PAGE_DOWN
+		&kp LSHFT   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				           		   &mt RS(H) H        &mt RS(J) J     			    &mt RS(K) K     		  &mt RS(L) L     &kp RETURN        &kp HOME
+		&kp LCTRL   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B       &kp EQUAL             &kp MINUS  		   &mt RS(N) N        &mt RS(M) M     			    &comma_comma    		  &dot_dot        &kp BSPC          &kp END
+		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE     &lt NAVIGATION SPACE   &lt MOUSE K_APP    &mt RIGHT_BRACKET RS(RIGHT_BRACKET)   &mt BACKSLASH RS(BACKSLASH)
             >;
         };
 
@@ -110,8 +110,8 @@ keymap {
 
 	    label = "MOUSE";
             bindings = <
-		&kp ESC     &none   &none            &none            &none             &none                      	       &none	      &none		&none		   &none              &none      &kp PAGE_UP
-		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none      &kp PAGE_DOWN
+		&kp ESC     &none   &none            &none            &none             &none                      	       &none	      &none		&none		   &none              &none        &kp PAGE_UP
+		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none        &kp PAGE_DOWN
 		&kp LSHFT   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &kp RETURN   &kp HOME
 		&kp LCTRL   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &kp BSPC     &kp END
 		                      		     &kp LALT	      &sk LEFT_CONTROL  &mkp RCLK   &mkp LCLK          &none   &none	      &none  		&none
@@ -134,11 +134,11 @@ keymap {
 
             label = "Navigation";
             bindings = <
-		&kp ESC     &none   &none 	    &none      &none  	     &none                   	       &none     &none            &none   	     &none   		&none   &kp PAGE_UP
-		&kp TAB     &none   &kp PAGE_DOWN   &kp UP     &kp PAGE_UP   &none                             &kp Y     &mwh SCROLL_UP   &mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp PAGE_DOWN
+		&kp ESC     &none   &none 	    &none      &none  	     &none                   	       &none     &none            &none   	     &none   		&none        &kp PAGE_UP
+		&kp TAB     &none   &kp PAGE_DOWN   &kp UP     &kp PAGE_UP   &none                             &kp Y     &mwh SCROLL_UP   &mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none        &kp PAGE_DOWN
 		&kp LSHFT   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&kp RETURN   &kp HOME
-		&kp LCTRL   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&kp BSPC  &kp END
-		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL  &kp LGUI              &none   &none     &none    &none
+		&kp LCTRL   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&kp BSPC     &kp END
+		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL      &kp LGUI          &none   &none     &none            &none
             >;
         };
     
@@ -159,11 +159,11 @@ keymap {
 
             label = "Symbols";
             bindings = <
-		&kp ESC     &kp EXCLAMATION       &kp AT_SIGN 	   &kp HASH               &kp DOLLAR  	  &kp PERCENT                  	    &kp CARET   &kp AMPERSAND     &kp ASTERISK     &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp PAGE_UP
-		&kp TAB     &mt RS(TILDE) TILDE   &kp LEFT_BRACE   &kp GRAV               &kp SLASH       &none                             &kp Y       &kp BACKSLASH      &open_symbol            &close_symbol         &none                   &kp PAGE_DOWN
-		&kp LSHFT   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                         &kp PIPE    &mt MINUS UNDER   &mt EQUAL PLUS   &none                  &none                   &kp HOME   
-		&kp LCTRL    &kp F2                &kp F3           &kp LA(F4)             &kp LC(F5)      &kp F6     &none                  &none  &kp F7      &kp F8            &kp F9           &kp F10                &kp F11                 &kp END
-		                         	  &kp LALT         &kp LGUI               &mo 1           &kp SPACE   &none                 &none       &none             &none
+		&kp ESC     &kp EXCLAMATION       &kp AT_SIGN 	   &kp HASH               &kp DOLLAR  	  &kp PERCENT                      	    &kp CARET   &kp AMPERSAND     &kp ASTERISK     &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp PAGE_UP
+		&kp TAB     &mt RS(TILDE) TILDE   &kp LEFT_BRACE   &kp GRAV               &kp SLASH       &none                                     &kp Y       &kp BACKSLASH     &open_symbol     &close_symbol          &none                   &kp PAGE_DOWN
+		&kp LSHFT   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                                 &kp PIPE    &mt MINUS UNDER   &mt EQUAL PLUS   &none                  &none                   &kp HOME   
+		&kp LCTRL   &kp F2                &kp F3           &kp LA(F4)             &kp LC(F5)      &kp F6      &none                 &none   &kp F7      &kp F8            &kp F9           &kp F10                &kp F11                 &kp END
+		                         	                   &kp LALT               &none           &kp LGUI    &kp SPACE             &none   &none       &none             &none
             >;
         };
 	};
