@@ -123,11 +123,11 @@ keymap {
 	/*		NAVIGATION LAYER
 
 	 ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
-	 |  ESC  |     |     |      |      |      |          		         |      |       |       |      |       |  BSPC |
+	 |  ESC  |     |     |      |      |      |          		         |  Y   |       |       |      |       |  BSPC |
 	 |  TAB  |     |PAGDN| UP   |PAGUP |      |            		         |VOL-UP|       |       |      |       | ENTER |
-	 |  CTRL |     |LEFT |DOWN  |RIGHT |      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       | <def> |
-	 | SHIFT |  Z  |  X  |  C   | V    |      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       | <def> |
-	 ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
+	 |  CTRL |     |LEFT |DOWN  |RIGHT |      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       |       |
+	 | SHIFT |  Z  |  X  |  C   | V    |      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       |       |
+	 ╰──────────────────╮  ALT  | GUI  |SKCTRL| SYMBOLS| 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
 	 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯		
 	*/ 
 
@@ -138,7 +138,7 @@ keymap {
 		&kp TAB     &none   &kp PAGE_DOWN   &kp UP     &kp PAGE_UP   &none                             &kp Y     &mwh SCROLL_UP   &mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
 		&kp LCTRL   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&none   &kp LCTRL
 		&kp LSHFT   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &none   &kp DEL   &kp INSERT 	  &none              &none	 	&none   &kp RSHFT
-		                         	    &kp LALT   &kp LGUI      &mo 1   &kp SPACE         &none   &none     &none    &none
+		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &none   &none     &none    &none
             >;
         };
     
@@ -147,13 +147,14 @@ keymap {
 	/*		Functions numbers and simbols
 
 	 ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
-	 |  ESC  |     |     |      |      |      |          		         |      |       |       |      |       |  BSPC |
-	 |  TAB  |     |     | UP   |      |      |            		         |VOL-UP|       |       |      |       | ENTER |
-	 |  CTRL |     |LEFT |DOWN  |RIGHT |      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       | <def> |
+	 |  ESC  |  !  |  @  |  #   |  %   |  %   |          		         |   ¨  |   &   |   *   |  (   |    )  |  BSPC |
+	 |  TAB  |  '" |  \  |Blash |   │  |  .   |            		         |VOL-UP|       |       |      |       | ENTER |
+	 |  CTRL |  ~  |  ?  |  ^   |  .   |  \   ╰────────╮             ╭───────╯VOL-DN|       |       |      |       | <def> |
 	 | SHIFT |     |     |PAGEB | PAGEF|      |        | 		 |       |      |PAGE-UP|PAGE-DN|  .   |       | <def> |
 	 ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
 	 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯		
-	*/ 
+                	
+*/ 
 
 
             label = "Symbols";
