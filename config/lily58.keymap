@@ -91,7 +91,7 @@ keymap {
 		&kp TAB     &mt RS(Q) Q     &mt RS(W) W     &mt RS(E) E     &mt RS(R) R     &mt RS(T) T				       &mt RS(Y) Y     &mt RS(U) U     &mt RS(I) I     &mt RS(O) O     &mt RS(P) P     &kp RETURN
 		&kp LCTRL   &mt RS(A) A     &mt RS(S) S     &mt RS(D) D     &mt RS(F) F     &mt RS(G) G				       &mt RS(H) H     &mt RS(J) J     &mt RS(K) K     &mt RS(L) L     &kp SEMI        &kp HOME
 		&kp LSHFT   &mt RS(Z) Z     &mt RS(X) X     &mt RS(C) C     &mt RS(V) V     &mt RS(B) B   &kp PIPE         &kp MINUS  &mt RS(N) N     &mt RS(M) M     &comma_comma    &dot_dot        &kp FSLH        &kp END
-		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &kp RIGHT_BRACKET &kp  &mt RS(NON_US_BACKSLASH) NON_US_BACKSLASH
+		                                            &kp LALT        &kp LGUI        &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &lt NAVIGATION SPACE  &lt MOUSE K_APP      &kp RIGHT_BRACKET  &mt RS(NON_US_BACKSLASH) NON_US_BACKSLASH
             >;
         };
 
