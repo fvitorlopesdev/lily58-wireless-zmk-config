@@ -37,7 +37,7 @@ behaviors {
      label = "TD_OPEN";
      #binding-cells = <0>;
      tapping-term-ms = <200>;
-     bindings = <&kp RS(RIGHT_BRACKET)>, <&kp RS(NUMBER_9)>, <&kp RIGHT_BRACKET>, <&kp LT>;
+     bindings = <&kp RS(RIGHT_BRACKET)>, <&kp RS(NUMBER_9)>, <&kp RIGHT_BRACKET>;
    };
 
    close_symbol: td_close {
@@ -45,7 +45,7 @@ behaviors {
      label = "TD_CLOSE";
      #binding-cells = <0>;
      tapping-term-ms = <200>;
-     bindings = <&kp RS(BACKSLASH)>, <&kp RS(NUMBER_0)>, <&kp BACKSLASH>, <&kp GT>;
+     bindings = <&kp RS(BACKSLASH)>, <&kp RS(NUMBER_0)>, <&kp BACKSLASH>;
    };
 
    dot_dot: dot_dot {
@@ -53,7 +53,7 @@ behaviors {
      label = "DOT_DOT";
      #binding-cells = <0>;
      tapping-term-ms = <200>;
-     bindings = <&kp PERIOD>, <&kp LS(SLASH)>;
+     bindings = <&kp PERIOD>, <&kp LS(SLASH)>,<&kp LT>;
   };
 
    comma_comma: comma_comma {
@@ -61,7 +61,7 @@ behaviors {
      label = "COMMA_COMMA";
      #binding-cells = <0>;
      tapping-term-ms = <200>;
-     bindings = <&kp COMMA>, <&kp SLASH>;
+     bindings = <&kp COMMA>, <&kp SLASH>, <&kp GT>;
    };
 
  };
