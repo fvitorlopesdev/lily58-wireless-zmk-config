@@ -73,8 +73,7 @@ keymap {
 	/* 			BASE
 	  base layer contains autoshift on alpha and num chars	 
 	
-	 * use slash and backslass and pipe dedicated key
-	 - K_APP tap mouse keys hold
+	 - use slash and backslass and pipe dedicated key
 	 - Link other layers
 		
 	 ╭────────────────────────────────────────╮                              ╭─────────────────────────────────────────────╮
@@ -82,7 +81,7 @@ keymap {
 	 |  TAB  |  Q  |  W  |  E   |  R   |  T   |            		         |  Y   |  U    |  I    |  O   |   P   | ENTER |
 	 |  CTRL |  A  |  S  |  D   |  F   |  G   ╰────────╮             ╭───────╯  H   |  J    |  K    |  L   |   Ç   |  CTRL |
 	 | SHIFT |  Z  |  X  |  C   |  V   |  B   |  "+"   | 		 |  "-"  |  N   |  M    |  ,    |  .   |  /|\  | SHIFT |
-	 ╰──────────────────╮  ALT  | GUI  |SKCTRL| SYNBOLS| 		 |SPACE  | RAISE|  [{   |  ]}   ╭──────────────────────╯	
+	 ╰──────────────────╮  ALT  | GUI  |SKCTRL| SYMBOLS| 		 |SPACE  |MOUSE |  [{    |  ]}  ╭──────────────────────╯	
 	 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯								
 	 
 	*/
@@ -105,7 +104,7 @@ keymap {
 	 |  TAB  |     |LFTCL|  MUP | RGTCL|      |            		         |VOL-UP|       |       |      |       | ENTER |
 	 |  CTRL |     |MLEFT|MDOWN |MRIGHT|      ╰────────╮             ╭───────╯VOL-DN|       |       |      |       |  CTRL |
 	 | SHIFT |     |     |PAGEB | PAGEF|      |        | 		 |       |      |PAGE-UP|PAGE-DN|      |       | SHIFT |
-	 ╰──────────────────╮  ALT  | GUI  | LOWER|  SPACE | 		 | ENTER | RAISE| BSPC  | GUI   ╭──────────────────────╯	
+	 ╰──────────────────╮  ALT  |STCTRL| RCLK |  LCLK  | 		 |       |      |       |       ╭──────────────────────╯	
 	 		    ╰──────────────────────────────╯		 ╰──────────────────────────────╯								
 	*/    
 
@@ -115,7 +114,7 @@ keymap {
 		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
 		&kp LCTRL   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &none   &kp LCTRL
 		&kp LSHFT   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &none   &kp RSHFT
-		                      		     &kp LALT	      &kp LGUI          &mkp RCLK   &mkp LCLK          &none   &none	      &none  		&none
+		                      		     &kp LALT	      &sk LEFT_CONTROL  &mkp RCLK   &mkp LCLK          &none   &none	      &none  		&none
             >;
         };
 
