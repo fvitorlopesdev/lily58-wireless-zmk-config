@@ -112,8 +112,8 @@ keymap {
             bindings = <
 		&kp ESC     &none   &none            &none            &none             &none                      	       &none	      &none		&none		   &none              &none   &kp BSPC
 		&kp TAB     &none   &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none    			       &kp K_VOL_UP   &mwh SCROLL_UP	&mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
-		&kp LCTRL   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &none   &kp LCTRL
-		&kp LSHFT   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &none   &kp RSHFT
+		&kp LCTRL   &none   &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                       	       &kp K_VOL_DN   &none		&none		   &none	      &none   &kp HOME
+		&kp LSHFT   &none   &none            &kp LA(LEFT)     &kp LA(RIGHT)     &none	    &none    	       &none   &kp K_MUTE     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none	      &none   &kp END
 		                      		     &kp LALT	      &sk LEFT_CONTROL  &mkp RCLK   &mkp LCLK          &none   &none	      &none  		&none
             >;
         };
@@ -136,9 +136,9 @@ keymap {
             bindings = <
 		&kp ESC     &none   &none 	    &none      &none  	     &none                   	       &none     &none            &none   	     &none   		&none   &kp BSPC
 		&kp TAB     &none   &kp PAGE_DOWN   &kp UP     &kp PAGE_UP   &none                             &kp Y     &mwh SCROLL_UP   &mwh SCROLL_DOWN   &mwh SCROLL_DOWN   &none   &kp RETURN
-		&kp LCTRL   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&none   &kp LCTRL
-		&kp LSHFT   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&none   &kp RSHFT
-		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL  &lt SYMBOLS SPACE         &none   &none     &none    &none
+		&kp LCTRL   &none   &kp LEFT 	    &kp DOWN   &kp RIGHT     &none                             &none     &kp LEFT_SHIFT   &kp LEFT_CONTROL   &kp LALT   	&none   &kp HOME
+		&kp LSHFT   &kp Z   &kp X 	    &kp C      &kp V 	     &none   &trans   	       &kp A   &kp DEL   &kp INSERT 	  &none              &none	 	&none   &kp END
+		                    &kp LALT        &kp LGUI   &sk LEFT_CONTROL  &kp LGUI         &none   &none     &none    &none
             >;
         };
     
@@ -161,9 +161,9 @@ keymap {
             bindings = <
 		&kp ESC     &kp EXCLAMATION       &kp AT_SIGN 	   &kp HASH               &kp DOLLAR  	  &kp PERCENT                  	    &kp CARET   &kp AMPERSAND     &kp ASTERISK     &kp MINUS      &kp EQUAL      &kp BSPC
 		&kp TAB     &mt RS(TILDE) TILDE   &kp LEFT_BRACE   &kp GRAV               &kp SLASH       &none                             &kp Y       &kp BACKSLASH     &kp PIPE         &kp RS(MINUS)  &kp RS(EQUAL)  &none                   &kp RETURN
-		&kp LCTRL   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                         &kp PIPE    &td_open          &td_close        &none                  &none                   &kp LCTRL   
-		&kp LSHFT   &kp F2                &kp F3           &kp LA(F4)             &kp LC(F5)      &kp F6                            &kp F7      &kp F8            &kp F9           &kp F10                &kp F11                 &kp RSHFT
-		                         	  &kp LALT         &kp LGUI               &mo 1           &kp SPACE   &none                 &none       &none             &none
+		&kp LCTRL   &kp SINGLE_QUOTE      &kp RA(W)        &kp LS(LEFT_BRACKET)   &kp SEMICOLON   &kp SLASH                         &kp PIPE    &td_open          &td_close        &none                  &none                   &kp HOME   
+		&kp LSHFT   &kp F2                &kp F3           &kp LA(F4)             &kp LC(F5)      &kp F6      &kp F6           &kp F6   &kp F7      &kp F8            &kp F9           &kp F10                &kp F11                 &kp END
+		                         	  &kp LALT         &kp LGUI               &mo 1           &kp SPACE   		        &none                 &none       &none             &none
             >;
         };
 	};
